@@ -1,0 +1,61 @@
+.intro {
+    background: linear-gradient(#E14F4F, #EB6565);
+    position: relative;
+    top: 80px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#i-content {
+    width: 100%;
+}
+
+#i-content h1 {
+    font-size: 31px;
+    font-weight: 400;
+}
+
+#i-content p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+/* MODE TABLET */
+
+@media (min-width: 768px) {
+    .intro {
+        height: 380px;
+    }
+
+    #i-content h1 {
+        font-size: 38px;
+    }
+    
+    #i-content p {
+        font-size: 22px; 
+    }
+}
+
+
+/* MODE PC */
+
+@media (min-width: 768px) {
+    .intro {
+        height: 580px;
+    }
+
+    #i-content h1 {
+        font-size: 50px;
+    }
+    
+    #i-content p {
+        font-size: 35px; 
+    }
+}

@@ -1,0 +1,130 @@
+.jobs {
+    position: relative;
+    height: 150px;
+    top: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.jobs h2 {
+    margin-bottom: 15px;
+}
+
+.jobs #j-content {
+    width: 90%;
+    font-size: 14px;
+}
+
+.jobs .card {
+    margin-top: 25px;
+}
+
+/* -------------------------------------------------------------- */
+
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 245px;
+    top: 100px;
+    perspective: 1000px;    
+}
+
+.flip-card-inner { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back { 
+    height: 244.4px;
+    width: 99.9%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(#dd5c98, rgb(35, 114, 187));
+    border-radius: 5px;
+    color: white;
+    transform: rotateY(180deg);
+
+    transition: ease-in .3s;
+    opacity: 0;
+}
+
+.flip-card:hover .flip-card-back {
+    opacity: 1;
+}
+
+
+/* MODE TABLET */
+
+@media (min-width: 768px) {
+
+    .jobs {
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: 100px;
+        margin-bottom: 60px;
+    }
+
+    .jobs h2 { margin-top: 20px; }
+
+    .jobs #j-content {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .jobs .card {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .flip-card-back p {
+        width: 80%;
+    }
+
+}
+
+
+/* MODE PC */
+
+@media (min-width: 1024px) {
+
+    .jobs { top: 0px; }
+
+    .jobs #j-content {
+        margin-bottom: -40px;
+    }
+
+    .jobs .card { margin: 20px; margin-top: 110px; }
+
+    .flip-card {
+        width: 380px;
+    }
+
+    .flip-card-back {
+        height: 332px;
+    }
+
+}
+
+

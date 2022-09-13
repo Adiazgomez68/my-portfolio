@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> AndreDev </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="h-logo">
+                <img src="assets/Logo.png" alt="logo"/>
+            </div>
+
+            <input type="checkbox" id="h-menu-bar">
+
+            <label class="h-menu" for="h-menu-bar">
+                <img src="./assets/Icon-Menu.svg" alt="Icono de menú" style="cursor: pointer;"/>
+            </label>
+
+            <nav class="h-links">
+                <ul>
+                    <a href="#about"> <li id="link"> About me </li> </a>
+                    <a href="#skills"> <li id="link"> Skills </li> </a>
+                    <a href="#portfolio"> <li id="link"> Portfolio </li> </a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="intro">
+                <div id="i-content">
+                    <h1> 
+                        Hello! <br>
+                        I'm Andrés Díaz 
+                    </h1>
+                    <p>
+                        Bachelor of Computing and Audiovisual Media
+                    </p>
+                </div>
+            </section>
+
+           <section class="about">
+                <div id="a-img1">
+                    <img src="./assets/Devices Vectors.svg" alt="devices" width="62%"> 
+                </div>
+
+                <a name="about"> <h2>About me</h2> </a>
+                <div id="a-content">
+                    <p> 
+                        I have a degree in Computer Science and Audiovisual Media, passionate 
+                        about Front-End development, design and creation of user interfaces. 
+                        I also work on the server side, but my focus is on the client.
+                    </p> <br>
+                    <p>
+                        Since 2019 I have been learning about technologies for web Development
+                        and until then I have carried out personal projects and work teams.
+                    </p> <br>
+                    <p>
+                        I am currently working on creating a web application to publish
+                        podcasts, but I am also open to new opportunities.
+                    </p>
+                </div>
+
+                <div id="a-img2">
+                    <img src="./assets/Coding.svg" alt="Coding" width="100%">
+                </div>
+            </section>
+
+            <section class="final">
+                <article class="skills">
+                    <a name="skills"> <h2> My skills </h2> </a>  
+
+                    <div id="s-content">
+                        <p> 
+                            I am a person with the ability to learn in a short time, 
+                            do my job well and be a responsable person in what I do. 
+                        </p> <br>
+                        <p>
+                            The area in which I stand out is in Front-End development, 
+                            using technologies such as HTML, CSS, JAVASCRIPT, some 
+                            libraries such as Bootstrap, React; tools like Material Design; 
+                            and Frameworks like Vue.js. Building small and medium
+                            web applications, interactive, layout, single page and 
+                            responsive applications.
+                        </p> 
+                    </div>
+
+                    <div class="tech"> 
+                        <img src="./assets/Tech1.svg" alt="Frontend">
+                        <img src="./assets/Tech2.svg" alt="Backend"> 
+                        <img src="./assets/Tech3.svg" alt="ReactJs"> 
+                        <img src="./assets/Tech4.svg" alt="VueJs">
+                    </div>
+
+                    <hr>
+                </article>
+
+                <article class="jobs">
+                    <a name="portfolio"> <h2> Portfolio </h2> </a>
+
+                    <div id="j-content">
+                        <p>
+                            These projects have been created using technologies such as HTML5, CSS3, 
+                            Javascript, ReactJs, NodeJs, GraphQL and Material Design.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <a 
+                            href="https://adiazgomez68.github.io/flexbox-page-mockup/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        > 
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./assets/Flexbox.png" alt="Flexbox" width="100%">
+                                    </div>
+                                
+                                    <div class="flip-card-back"> 
+                                        <p> This is a simple mockup realized with css Flexbox </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a 
+                            href="https://xforce-frontend.herokuapp.com/home" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        > 
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./assets/Megasales.png" alt="Megasales" width="100%">
+                                    </div>
+                                
+                                    <div class="flip-card-back"> 
+                                        <p> 
+                                            Project realized for the management sales of electronic products 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a 
+                            href="https://creasy-solutions.herokuapp.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        > 
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="./assets/Creasy.png" alt="Creasy Solutions" width="100%">
+                                    </div>
+                                
+                                    <div class="flip-card-back"> 
+                                        <p> Web application for the management research projects </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </article> 
+            </section>
+        </main>
+
+        <footer> 
+            <div id="f-logo">
+                <img src="./assets/Logo2.png" alt="logo" width="100%">
+            </div>
+
+            <div class="icons">
+                <a 
+                    href="https://github.com/Adiazgomez68"
+                    title="Github"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    <img id="git-icon" src="./assets/github-logo.png" alt="Logo_Github" width="85%">
+                </a>
+
+                <a 
+                    href="https://linkedin.com/in/andrés-díaz-gómez-50aa80229"
+                    title="Linkedin"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    <img id="linke-icon" src="./assets/logo-linkedin.png" alt="Logo_Linkedin" width="100%">
+                </a>
+
+                <a 
+                    href="https://web.facebook.com/profile.php?id=100070764579026"
+                    title="Facebook"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    <img id="face-icon" src="./assets/icono-facebook-blanco.png" alt="Logo_Facebook" width="100%">
+                </a>
+            </div>
+
+            <hr style="width: 90%; opacity: 0.1; margin-bottom: 15px;">
+
+            <p> Created by <strong> Andrés Díaz </strong> </p>
+        </footer> 
+
+        <button class="btn-up hide">
+            <img src="./assets/flecha-arriba-new.png" title="Go Back up" alt="Flecha Hacia Arriba">
+        </button> 
+
+        <script src="./index.js"></script>
+    </body>
+</html>

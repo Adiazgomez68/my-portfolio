@@ -1,0 +1,28 @@
+.btn-up {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transform: scale(1);
+    transition: ease-in .2s;
+    opacity: 1;
+}
+
+.btn-up:hover {
+    transform: scale(0.9);
+}
+
+.btn-up img {
+    width: 100%;
+    border: solid white 2px;
+    border-radius: 50px 50px;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
